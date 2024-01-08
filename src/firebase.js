@@ -1,0 +1,18 @@
+import { initializeApp } from "firebase/app";
+import { getFirestore } from "firebase/firestore";
+
+const firebaseConfig = {
+  apiKey: "AIzaSyCam-s9ausO0GiWZfysvYIIQeCwFRsfMik",
+  authDomain: "tinder-clone-8c03a.firebaseapp.com",
+  databaseURL: "https://tinder-clone-8c03a-default-rtdb.firebaseio.com",
+  projectId: "tinder-clone-8c03a",
+  storageBucket: "tinder-clone-8c03a.appspot.com",
+  messagingSenderId: "38010480838",
+  appId: "1:38010480838:web:1de65c1b5c87dedc600fc7",
+  measurementId: "G-JVKQTBVSSE",
+};
+
+const app = initializeApp(firebaseConfig);
+const database = getFirestore(app);
+
+export default database;
