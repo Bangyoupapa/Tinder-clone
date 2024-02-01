@@ -8,50 +8,44 @@ import { IconButton } from "@mui/material";
 import { Link, useNavigate } from "react-router-dom";
 import tinder from "./images/tinder.png";
 
-const StyledHeader = styled.div`
+const HeaderContainer = styled.div`
   display: flex;
   justify-content: space-between;
   border-bottom: 1px solid #f9f9f9;
+  align-items: center;
 `;
+
+const LogoImage = styled.img`
+  height: 40px;
+  object-fit: contain;
+`;
+
 // Your header styles here
 
-function Header({ backButton }) {
-  const history = useNavigate();
+const Header = ({ backButton }) => {
+  const navigate = useNavigate();
   return (
     //BEM
-    <div className="header">
+    <HeaderContainer>
       {backButton ? (
-        <IconButton onClick={() => history.replace(backButton)}>
-          <ArrowBackIosIcon fontSize="large" claaName="header_icon" />
+        <IconButton onClick={() => navigate(backButton)}>
+          <ArrowBackIosIcon fontSize="large" className="header_icon" />
         </IconButton>
       ) : (
         <IconButton>
-          <PersonIcon className="header_icon" fontSize="large"></PersonIcon>
+          <PersonIcon className="header_icon" fontSize="large" />
         </IconButton>
       )}
-
-      <StyledHeader>
+      <Link to="/">
+        <LogoImage className="header_logo" src={tinder} alt="tinder logo" />
+      </Link>
+      <Link to="/chat">
         <IconButton>
-          <HeaderIcon fontSize="large" />
+          <HeaderIcon as={ForumIcon} fontSize="large" />
         </IconButton>
-        <img src={tinder} height={50} width={50} alt="tinder logo" />
-        <Link to="/">
-          <img
-            className="header_logo"
-            height={50}
-            width={50}
-            src={tinder}
-            alt="tinder logo"
-          />
-        </Link>
-        <Link to="/chat">
-          <IconButton>
-            <HeaderIcon as={ForumIcon} fontSize="large" />
-          </IconButton>
-        </Link>
-      </StyledHeader>
-    </div>
+      </Link>
+    </HeaderContainer>
   );
-}
+};
 
 export default Header;

@@ -1,5 +1,5 @@
 import { initializeApp } from "firebase/app";
-import { getFirestore } from "firebase/firestore";
+import { getFirestore, collection, getDocs } from "firebase/firestore/lite";
 
 const firebaseConfig = {
   apiKey: "AIzaSyCam-s9ausO0GiWZfysvYIIQeCwFRsfMik",
@@ -12,7 +12,13 @@ const firebaseConfig = {
   measurementId: "G-JVKQTBVSSE",
 };
 
-const app = initializeApp(firebaseConfig);
-const database = getFirestore(app);
+const firebaseApp = initializeApp(firebaseConfig);
+const db = getFirestore(firebaseApp);
 
-export default database;
+// Get a list of people from your database
+export async function getPeople() {
+  const people = collection(db, "People");
+  const pplSnapshot = await getDocs(people);
+  const pplList = pplSnapshot.docs.map((doc) => doc.data());
+  return pplList;
+}
