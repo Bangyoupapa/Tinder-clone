@@ -70,3 +70,5 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
 
 在tinder clone被做完以後，接下來就是製作出docker image。其實那之前還要加一堆有的沒的。
+
+cloud build 要找到他的service account還真不容易，你看我還要弄那些有的沒的，點開右上角google自己送的東東。
