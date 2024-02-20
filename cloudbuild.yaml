@@ -1,0 +1,33 @@
+steps:
+  - name: "gcr.io/cloud-builders/docker"
+    args: ["build", "-t", "gcr.io/tinder-clone-8c03a/tinder-clone:v3", "."]
+
+  - name: "gcr.io/cloud-builders/docker"
+    args: ["push", "gcr.io/tinder-clone-8c03a/tinder-clone:v3"]
+
+  # Get Kubernetes credentials
+  - name: "gcr.io/google.com/cloudsdktool/cloud-sdk"
+    entrypoint: "gcloud"
+    args:
+      - "container"
+      - "clusters"
+      - "get-credentials"
+      - tinder-clone-cluster # Replace with your cluster name
+      - "--zone"
+      - us-central1-a # Replace with your cluster zone
+      - "--project"
+      - tinder-clone-8c03a # Replace with your project ID
+
+  # Update the Kubernetes deployment
+  - name: "gcr.io/google.com/cloudsdktool/cloud-sdk"
+    entrypoint: "kubectl"
+    args:
+      - "set"
+      - "image"
+      - "deployment/tinder-clone-deployment"
+      - "tinder-clone-container=gcr.io/tinder-clone-8c03a/tinder-clone:v3"
+      - "--namespace"
+      - "default" # Replace with your namespace if not default
+
+images:
+  - "gcr.io/tinder-clone-8c03a/tinder-clone:v3"

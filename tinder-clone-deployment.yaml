@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: tinder-clone-deployment
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: tinder-clone
+  template:
+    metadata:
+      labels:
+        app: tinder-clone
+    spec:
+      containers:
+        - name: tinder-clone-container
+          image: gcr.io/tinder-clone-8c03a/tinder-clone:v3
+          ports:
+            - containerPort: 3000
