@@ -87,6 +87,13 @@ font-size:large讓他變大一點點。
 header的css再加align-items:center，可以讓圖案全部水平對齊。
 為了讓按鍵在按的時候有按下去的感覺，我從material-ui import IconButton，並讓他夾著我原本的按鍵。
 
+上述完成後，可以開始串接App.js和Home.js了。
+首先要先用import{BrowseRouter as Router,Routes,Route} from "react-router-dom"
+組成由外到內分別為Router,Routes,Route。Route會包裹著path和element（像<Route path element{}/>)。element裡頭，是拿來塞進去我們熟悉的HTML等東東，path則是理所當然的連結。
+我的Header是包在每個element裡。（或許有更好的做法也不一定）
+
+我們接著灌進新的程式 react-tinder-card，用rfce，這個快捷鍵可以讓我產生一個preset增加工作效率。
+
 
 
 
