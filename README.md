@@ -93,6 +93,10 @@ header的css再加align-items:center，可以讓圖案全部水平對齊。
 我的Header是包在每個element裡。（或許有更好的做法也不一定）
 
 我們接著灌進新的程式 react-tinder-card，用rfce，這個快捷鍵可以讓我產生一個preset增加工作效率。
+react-tinder-card是一個寫好的套件，他可以讓我們的卡片有像tinder滑左滑右的樣子。
+我們再來要做一個人物的矩陣，用const[people, setPeople]=usestate([])
+setPeople([...people,'Mark','Kevin']) 等同於 const people = [] people.push('Mark','Kevin')
+當你資料更新時，React會自動用新資料展示新矩陣。那個...是指前面在矩陣的東西會保留下來。
 
 
 
