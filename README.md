@@ -96,7 +96,7 @@ header的css再加align-items:center，可以讓圖案全部水平對齊。
 react-tinder-card是一個寫好的套件，他可以讓我們的卡片有像tinder滑左滑右的樣子。
 我們再來要做一個人物的矩陣，用const[people, setPeople]=usestate([])
 setPeople([...people,'Mark','Kevin']) 等同於 const people = [] people.push('Mark','Kevin')
-當你資料更新時，React會自動用新資料展示新矩陣。那個...是指前面在矩陣的東西會保留下來。假設你沒有打...，等於你的矩陣會只剩下Mark和Kevin。
+當你資料更新時，React會自動用新資料展示新陣列。那個...是指前面在陣列的東西會保留下來。假設你沒有打...，等於你的陣列會只剩下Mark和Kevin。
 {people.map((person)=>(
 <TinderCard
   key={person.name}
